@@ -1,0 +1,27 @@
+/* Carrusel */
+.carousel {
+  max-width: 100%; /* ocupa todo el ancho */
+  margin: 30px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.5);
+}
+
+.carousel-item img {
+  width: 100%;        /* ocupa todo el ancho disponible */
+  height: 600px;       /* respeta la proporción original */
+  object-fit: contain;/* muestra la imagen completa sin recortar */
+}
+
+
+.carousel-caption {
+  background: rgba(0,0,0,0.5);
+  border-radius: 8px;
+  padding: 10px 15px;
+}
+
+/* Flechas negras para carruseles*/
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}

@@ -1,0 +1,179 @@
+<link rel="stylesheet" type="text/css" href="css/cursos.css">
+
+<!-- REQUISITOS -->
+
+<h2 class="text-center my-4">
+    <i class="fas fa-clipboard-check"></i>
+    Requisitos
+</h2>
+
+<p>
+    Los requisitos para poder inscribirse a los cursos del Centro de Formación de Trabajo de Rafael 
+    Calzada son los siguientes:
+    <ul>
+        <li>Ser mayor de 18 años</li>
+        <li>Ser vecino de Almirante Brown</li>
+    </ul>
+</p>
+
+
+<!-- PROCESO DE INSCRIPCIÓN -->
+
+<h2 class="text-center my-4">
+    <i class="fas fa-file-signature"></i>
+    Proceso de inscripción
+</h2>
+
+<p>
+    A continuación se detallan los pasos a seguir para poder inscribirse a los cursos de formación:
+
+    <ul>
+        <li>Elegir el o los cursos a los cuales se quiere inscribir dentro de la oferta disponible</li>
+        <li>AVERIGUAR EL RESTO DE PASOS</li>
+    </ul>
+</p>
+
+
+<!-- CURSOS -->
+
+<h2 class="text-center my-4">
+    <i class="fas fa-chalkboard-teacher"></i> 
+    Cursos en Rafael Calzada
+</h2>
+
+<p style="text-align: center;">Seleccione uno de los cursos para ver más información sobre el mismo</p>
+
+<table class="tabla-cursos">
+    <thead>
+        <tr>
+            <th>Área</th>
+            <th>Curso</th>
+            <th>Nivel / Etapas</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <!-- Carpintería -->
+        <tr onclick="mostrarCurso('carpinteria-basica')">
+            <td rowspan="3"><i class="fas fa-hammer"></i> Carpintería</td>
+            <td>Carpintería básica</td>
+            <td>Introducción</td>
+        </tr>
+        <tr onclick="mostrarCurso('carpinteria-avanzada')">
+            <td>Carpintería avanzada</td>
+            <td>Nivel superior</td>
+        </tr>
+        <tr onclick="mostrarCurso('fabricacion-muebles')">
+            <td>Fabricación de muebles</td>
+            <td>Taller práctico (requiere básico + avanzado)</td>
+        </tr>
+
+        <tr class="separador-area">
+            <td colspan="3">──────────────</td>
+        </tr>
+
+        <!-- Herrería -->
+        <tr onclick="mostrarCurso('herreria-basica')">
+            <td rowspan="2"><i class="fas fa-fire"></i> Herrería</td>
+            <td>Herrería básica</td>
+            <td>Introducción</td>
+        </tr>
+        <tr onclick="mostrarCurso('herreria-avanzada')">
+            <td>Herrería avanzada</td>
+            <td>Nivel superior</td>
+        </tr>
+
+        <tr class="separador-area">
+            <td colspan="3">──────────────</td>
+        </tr>
+
+        <!-- Electricidad -->
+        <tr onclick="mostrarCurso('electricidad-basica')">
+            <td rowspan="3"><i class="fas fa-bolt"></i> Electricidad</td>
+            <td>Electricidad básica domiciliaria</td>
+            <td>Introducción</td>
+        </tr>
+        <tr onclick="mostrarCurso('electricidad-avanzada')">
+            <td>Electricidad avanzada industrial</td>
+            <td>Nivel superior</td>
+        </tr>
+        <tr onclick="mostrarCurso('electricidad-industrial')">
+            <td>Electricidad industrial</td>
+            <td>Taller práctico (requiere básico + avanzado)</td>
+        </tr>
+
+        <tr class="separador-area">
+            <td colspan="3">──────────────</td>
+        </tr>
+
+        <!-- Textil y moda -->
+        <tr onclick="mostrarCurso('confeccion-basica')">
+            <td rowspan="6"><i class="fas fa-tshirt"></i> Textil y moda</td>
+            <td>Confección textil básica</td>
+            <td>Introducción</td>
+        </tr>
+        <tr onclick="mostrarCurso('confeccion-avanzada')">
+            <td>Confección textil avanzada</td>
+            <td>Nivel superior</td>
+        </tr>
+        <tr onclick="mostrarCurso('diseno-indumentaria')">
+            <td>Diseño y producción de indumentaria</td>
+            <td>Curso completo</td>
+        </tr>
+        <tr onclick="mostrarCurso('molderia-superior')">
+            <td>Moldería y confección – parte superior</td>
+            <td>Especialización</td>
+        </tr>
+        <tr onclick="mostrarCurso('molderia-inferior')">
+            <td>Moldería y confección – parte inferior</td>
+            <td>Especialización</td>
+        </tr>
+        <tr onclick="mostrarCurso('ropa-bebe')">
+            <td>Patronista y confeccionista de ropa de bebé</td>
+            <td>Curso completo</td>
+        </tr>
+
+        <tr class="separador-area">
+            <td colspan="3">──────────────</td>
+        </tr>
+
+        <!-- Jardinería y medio ambiente -->
+        <tr onclick="mostrarCurso('jardineria-paisajismo')">
+            <td rowspan="4"><i class="fas fa-seedling"></i> Jardinería y medio ambiente</td>
+            <td>Jardinería y paisajismo</td>
+            <td>Curso completo</td>
+        </tr>
+        <tr onclick="mostrarCurso('plantas-aromaticas')">
+            <td>Plantas aromáticas y medicinales</td>
+            <td>Curso completo</td>
+        </tr>
+        <tr onclick="mostrarCurso('gestion-espacios-verdes')">
+            <td>Gestión de espacios verdes y urbanos</td>
+            <td>Curso completo</td>
+        </tr>
+        <tr onclick="mostrarCurso('huerta-urbana')">
+            <td>Huerta urbana agroecológica</td>
+            <td>Curso completo</td>
+        </tr>
+
+        <tr class="separador-area">
+            <td colspan="3">──────────────</td>
+        </tr>
+
+        <!-- Artes gráficas -->
+        <tr onclick="mostrarCurso('serigrafia-basica')">
+            <td rowspan="2"><i class="fas fa-paint-brush"></i> Artes gráficas</td>
+            <td>Serigrafía básica</td>
+            <td>Introducción</td>
+        </tr>
+        <tr onclick="mostrarCurso('serigrafia-avanzada')">
+            <td>Serigrafía avanzada</td>
+            <td>Nivel superior</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<!-- Contenedor dinámico -->
+<div id="curso-detalle" class="mt-4"></div>

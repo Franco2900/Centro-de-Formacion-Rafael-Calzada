@@ -1,0 +1,41 @@
+.tabla-cursos {
+  margin: 40px auto;
+  max-width: 1000px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.tabla-cursos thead {
+  background: linear-gradient(90deg, #0d6efd, #6610f2);
+  color: #fff;
+  text-align: center;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.tabla-cursos tbody tr {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.tabla-cursos tbody tr:hover {
+  background: linear-gradient(90deg, #ffe259, #ffa751); /* color brillante */
+  color: #000;
+  transform: translateY(-4px); /* efecto flotante */
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+.tabla-cursos td, .tabla-cursos th {
+  vertical-align: middle;
+  padding: 12px 16px;
+}
+
+.separador-area td {
+  background: linear-gradient(90deg, #0d6efd, #6610f2);
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+}

@@ -1,0 +1,6 @@
+/* 20 pixeles de padding a todas las vistas */
+main div
+{
+  padding: 20px;
+}
+
